@@ -9,7 +9,6 @@ public class BubbleSort {
         while (aindaTroca) {
             aindaTroca = false;
             for (int b = 0; b < (array.length - 1); b++) {
-                System.out.println("Ok");
                 if (array[b] > array[b + 1]) {
                     aindaTroca = true;
                     var aux = array[b];
