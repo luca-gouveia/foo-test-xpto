@@ -20,7 +20,6 @@ public class BubbleSort {
 
         return array;
     }
-
     public static double[] ordenar(double[] array) {
         var aindaTroca = true;
         while (aindaTroca) {

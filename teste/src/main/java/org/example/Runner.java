@@ -3,10 +3,10 @@ package org.example;
 import org.example.bubble.BubbleSort;
 import org.example.bubble.util.ListaAleatoria;
 import org.example.fatorial.Fatorial;
+import org.example.multiplos.Multiplo;
 import org.example.votos.VotosResolve;
 
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Runner {
@@ -41,8 +41,12 @@ public class Runner {
             System.out.println("calcular fatorial de:");
             int valor = Integer.parseInt(scanner.nextLine());;
             System.out.println(Fatorial.calcular(valor));
+        } else if (resposta == 4) {
+            System.out.println("--- Multiplos 3 ou 5 ---");
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("lista soma dos multiplos até:");
+            int valor = Integer.parseInt(scanner.nextLine());;
+            System.out.println("SOMA: " + Multiplo.recuperarMultiploSoma_TRES_CINCO(valor));
         }
-
-
     }
 }
