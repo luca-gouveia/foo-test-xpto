@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.bubble.BubbleSort;
+import org.example.bubble.util.ListaAleatoria;
 import org.example.votos.VotosResolve;
 
 import java.util.Arrays;
@@ -22,12 +24,15 @@ public class Runner {
 
         if (resposta.equals("1")) {
             System.out.println("--- Votos em relação ao total de eleitores ---");
-            var votos = new VotosResolve(1000,800,150,50);
+            var votos = new VotosResolve(1000, 800, 150, 50);
             System.out.println(votos.validos());
             System.out.println(votos.brancos());
             System.out.println(votos.nulos());
         } else if (resposta.equals("2")) {
-            System.out.println("---  ---");
+            System.out.println("--- Bubble Sort ---");
+            var array = ListaAleatoria.listaInt(5);
+            System.out.println(Arrays.toString(array));
+            System.out.println("> " + Arrays.toString(BubbleSort.ordenar(array)));
         }
 
 
