@@ -2,9 +2,11 @@ package org.example;
 
 import org.example.bubble.BubbleSort;
 import org.example.bubble.util.ListaAleatoria;
+import org.example.fatorial.Fatorial;
 import org.example.votos.VotosResolve;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Runner {
@@ -33,6 +35,12 @@ public class Runner {
             var array = ListaAleatoria.listaInt(5);
             System.out.println(Arrays.toString(array));
             System.out.println("> " + Arrays.toString(BubbleSort.ordenar(array)));
+        } else if (resposta.equals("3")) {
+            System.out.println("--- Fatorial ---");
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("calcular fatorial de:");
+            int valor = Integer.parseInt(scanner.nextLine());;
+            System.out.println(Fatorial.calcular(valor));
         }
 
 
